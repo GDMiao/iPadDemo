@@ -7,8 +7,9 @@
 //
 
 #import "BaseNavigationVController.h"
+#import "LoginViewController.h"
 
-@interface BaseNavigationVController ()
+@interface BaseNavigationVController () <UINavigationControllerDelegate, UIGestureRecognizerDelegate>
 
 @end
 
@@ -16,17 +17,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.delegate = self;
+    // 设置全屏滑动返回
+    id target = self.interactivePopGestureRecognizer.delegate;
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:target action:@selector(handleNavigationTransition:)];
+    [self.view addGestureRecognizer:pan];
+    self.interactivePopGestureRecognizer.enabled = NO;
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    if (self.viewControllers.count > 0) {
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
+    [super pushViewController:viewController animated:animated];
 }
-*/
+
+#pragma mark - UINavigationControllerDelegate
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    // 判断如果是需要隐藏导航控制器的类，则隐藏
+//    BOOL isHideNav = ([viewController isKindOfClass:[LoginViewController class]] ||
+//                      [viewController isKindOfClass:[WYTargetVC class]]);
+    BOOL isHideNav = ([viewController isKindOfClass:[LoginViewController class]]);
+    
+    [self setNavigationBarHidden:isHideNav animated:YES];
+}
 
 @end

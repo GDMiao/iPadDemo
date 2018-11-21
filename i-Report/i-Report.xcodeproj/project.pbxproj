@@ -16,6 +16,8 @@
 		FA2B304621A43B5D008942A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2B304521A43B5D008942A3 /* main.m */; };
 		FA2B306221A43B74008942A3 /* BaseNavigationVController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2B305D21A43B74008942A3 /* BaseNavigationVController.m */; };
 		FA2B306321A43B74008942A3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2B305F21A43B74008942A3 /* LoginViewController.m */; };
+		FA8725E921A5B9550077A20D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8725E821A5B9550077A20D /* BaseViewController.m */; };
+		FA8725EE21A5CA150077A20D /* LoginTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8725ED21A5CA150077A20D /* LoginTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,17 @@
 		FA2B305D21A43B74008942A3 /* BaseNavigationVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationVController.m; sourceTree = "<group>"; };
 		FA2B305F21A43B74008942A3 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		FA2B306021A43B74008942A3 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		FA8725E021A5B46A0077A20D /* i-ReportPCH.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "i-ReportPCH.pch"; sourceTree = "<group>"; };
+		FA8725E121A5B6340077A20D /* DimensMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DimensMacros.h; sourceTree = "<group>"; };
+		FA8725E221A5B6E70077A20D /* PathMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PathMacros.h; sourceTree = "<group>"; };
+		FA8725E321A5B7350077A20D /* UtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
+		FA8725E421A5B7990077A20D /* APIStringMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIStringMacros.h; sourceTree = "<group>"; };
+		FA8725E521A5B8160077A20D /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		FA8725E721A5B9550077A20D /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		FA8725E821A5B9550077A20D /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		FA8725EA21A5BD6A0077A20D /* PodsLibsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodsLibsMacros.h; sourceTree = "<group>"; };
+		FA8725EC21A5CA150077A20D /* LoginTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginTextField.h; sourceTree = "<group>"; };
+		FA8725ED21A5CA150077A20D /* LoginTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,105 +119,18 @@
 		FA2B304C21A43B74008942A3 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				FA2B304D21A43B74008942A3 /* Network */,
-				FA2B304E21A43B74008942A3 /* Utils */,
-				FA2B304F21A43B74008942A3 /* Libs */,
-				FA2B305021A43B74008942A3 /* Supporting Files */,
-				FA2B305121A43B74008942A3 /* Resource */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		FA2B304D21A43B74008942A3 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		FA2B304E21A43B74008942A3 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		FA2B304F21A43B74008942A3 /* Libs */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Libs;
-			sourceTree = "<group>";
-		};
-		FA2B305021A43B74008942A3 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FA2B305121A43B74008942A3 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 		FA2B305221A43B74008942A3 /* Bms */ = {
 			isa = PBXGroup;
 			children = (
-				FA2B305321A43B74008942A3 /* Config */,
-				FA2B305421A43B74008942A3 /* Dtabase */,
-				FA2B305521A43B74008942A3 /* Models */,
-				FA2B305621A43B74008942A3 /* BaseServer */,
-				FA2B305721A43B74008942A3 /* View */,
-				FA2B305821A43B74008942A3 /* Application */,
+				FA8725EB21A5C9BB0077A20D /* Custom */,
+				FA8725DF21A5B3F50077A20D /* Config */,
 				FA2B305921A43B74008942A3 /* Controllers */,
-				FA2B306121A43B74008942A3 /* Helpers */,
 			);
 			path = Bms;
-			sourceTree = "<group>";
-		};
-		FA2B305321A43B74008942A3 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
-		FA2B305421A43B74008942A3 /* Dtabase */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Dtabase;
-			sourceTree = "<group>";
-		};
-		FA2B305521A43B74008942A3 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		FA2B305621A43B74008942A3 /* BaseServer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = BaseServer;
-			sourceTree = "<group>";
-		};
-		FA2B305721A43B74008942A3 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		FA2B305821A43B74008942A3 /* Application */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Application;
 			sourceTree = "<group>";
 		};
 		FA2B305921A43B74008942A3 /* Controllers */ = {
@@ -219,6 +145,7 @@
 		FA2B305A21A43B74008942A3 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				FA8725E621A5B9270077A20D /* Vc */,
 				FA2B305B21A43B74008942A3 /* Nav */,
 			);
 			path = Base;
@@ -242,11 +169,36 @@
 			path = LoginViewController;
 			sourceTree = "<group>";
 		};
-		FA2B306121A43B74008942A3 /* Helpers */ = {
+		FA8725DF21A5B3F50077A20D /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				FA8725E021A5B46A0077A20D /* i-ReportPCH.pch */,
+				FA8725E521A5B8160077A20D /* Macros.h */,
+				FA8725E121A5B6340077A20D /* DimensMacros.h */,
+				FA8725E221A5B6E70077A20D /* PathMacros.h */,
+				FA8725E321A5B7350077A20D /* UtilsMacros.h */,
+				FA8725E421A5B7990077A20D /* APIStringMacros.h */,
+				FA8725EA21A5BD6A0077A20D /* PodsLibsMacros.h */,
 			);
-			path = Helpers;
+			path = Config;
+			sourceTree = "<group>";
+		};
+		FA8725E621A5B9270077A20D /* Vc */ = {
+			isa = PBXGroup;
+			children = (
+				FA8725E721A5B9550077A20D /* BaseViewController.h */,
+				FA8725E821A5B9550077A20D /* BaseViewController.m */,
+			);
+			path = Vc;
+			sourceTree = "<group>";
+		};
+		FA8725EB21A5C9BB0077A20D /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				FA8725EC21A5CA150077A20D /* LoginTextField.h */,
+				FA8725ED21A5CA150077A20D /* LoginTextField.m */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,7 +312,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA8725EE21A5CA150077A20D /* LoginTextField.m in Sources */,
 				FA2B303B21A43B5D008942A3 /* ViewController.m in Sources */,
+				FA8725E921A5B9550077A20D /* BaseViewController.m in Sources */,
 				FA2B304621A43B5D008942A3 /* main.m in Sources */,
 				FA2B303821A43B5D008942A3 /* AppDelegate.m in Sources */,
 				FA2B306221A43B74008942A3 /* BaseNavigationVController.m in Sources */,
@@ -509,6 +463,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XDPZW44J58;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/i-Report/Bms/Config/i-ReportPCH.pch";
 				INFOPLIST_FILE = "i-Report/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -527,6 +483,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XDPZW44J58;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/i-Report/Bms/Config/i-ReportPCH.pch";
 				INFOPLIST_FILE = "i-Report/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
