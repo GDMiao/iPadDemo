@@ -10,6 +10,6 @@ target 'i-Report' do
   pod 'SDWebImage'
   pod 'Masonry'
   pod 'MJRefresh'
-  pod 'YYModel'
+  pod 'MJExtension'
   
 end
