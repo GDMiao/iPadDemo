@@ -10,12 +10,15 @@
 		2FE41E75FE5641DE6413111B /* libPods-i-Report.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA116AFC82B74932F76B6535 /* libPods-i-Report.a */; };
 		FA2B303821A43B5D008942A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2B303721A43B5D008942A3 /* AppDelegate.m */; };
 		FA2B303B21A43B5D008942A3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2B303A21A43B5D008942A3 /* ViewController.m */; };
-		FA2B303E21A43B5D008942A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2B303C21A43B5D008942A3 /* Main.storyboard */; };
 		FA2B304021A43B5D008942A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2B303F21A43B5D008942A3 /* Assets.xcassets */; };
 		FA2B304321A43B5D008942A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2B304121A43B5D008942A3 /* LaunchScreen.storyboard */; };
 		FA2B304621A43B5D008942A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2B304521A43B5D008942A3 /* main.m */; };
 		FA2B306221A43B74008942A3 /* BaseNavigationVController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2B305D21A43B74008942A3 /* BaseNavigationVController.m */; };
 		FA2B306321A43B74008942A3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2B305F21A43B74008942A3 /* LoginViewController.m */; };
+		FA52FD4121AABF64003ED529 /* ProjectsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA52FD4021AABF63003ED529 /* ProjectsListViewController.m */; };
+		FA52FD5121AAE674003ED529 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2B303C21A43B5D008942A3 /* Main.storyboard */; };
+		FA52FD5A21AAF4D7003ED529 /* ProjectsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA52FD5721AAF4D7003ED529 /* ProjectsListCell.xib */; };
+		FA52FD5B21AAF4D7003ED529 /* ProjectsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA52FD5921AAF4D7003ED529 /* ProjectsListCell.m */; };
 		FA8725E921A5B9550077A20D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8725E821A5B9550077A20D /* BaseViewController.m */; };
 		FA8725EE21A5CA150077A20D /* LoginTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8725ED21A5CA150077A20D /* LoginTextField.m */; };
 /* End PBXBuildFile section */
@@ -38,6 +41,12 @@
 		FA2B305D21A43B74008942A3 /* BaseNavigationVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationVController.m; sourceTree = "<group>"; };
 		FA2B305F21A43B74008942A3 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		FA2B306021A43B74008942A3 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		FA52FD3F21AABF63003ED529 /* ProjectsListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectsListViewController.h; sourceTree = "<group>"; };
+		FA52FD4021AABF63003ED529 /* ProjectsListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectsListViewController.m; sourceTree = "<group>"; };
+		FA52FD4421AAE3AC003ED529 /* BaseMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseMacros.h; sourceTree = "<group>"; };
+		FA52FD5721AAF4D7003ED529 /* ProjectsListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectsListCell.xib; sourceTree = "<group>"; };
+		FA52FD5821AAF4D7003ED529 /* ProjectsListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectsListCell.h; sourceTree = "<group>"; };
+		FA52FD5921AAF4D7003ED529 /* ProjectsListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectsListCell.m; sourceTree = "<group>"; };
 		FA8725E021A5B46A0077A20D /* i-ReportPCH.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "i-ReportPCH.pch"; sourceTree = "<group>"; };
 		FA8725E121A5B6340077A20D /* DimensMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DimensMacros.h; sourceTree = "<group>"; };
 		FA8725E221A5B6E70077A20D /* PathMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PathMacros.h; sourceTree = "<group>"; };
@@ -129,6 +138,7 @@
 				FA8725EB21A5C9BB0077A20D /* Custom */,
 				FA8725DF21A5B3F50077A20D /* Config */,
 				FA2B305921A43B74008942A3 /* Controllers */,
+				FA52FD4221AABF7B003ED529 /* Views */,
 			);
 			path = Bms;
 			sourceTree = "<group>";
@@ -138,6 +148,7 @@
 			children = (
 				FA2B305A21A43B74008942A3 /* Base */,
 				FA2B305E21A43B74008942A3 /* LoginViewController */,
+				FA52FD3E21AABE70003ED529 /* ProjectsList */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -169,6 +180,33 @@
 			path = LoginViewController;
 			sourceTree = "<group>";
 		};
+		FA52FD3E21AABE70003ED529 /* ProjectsList */ = {
+			isa = PBXGroup;
+			children = (
+				FA52FD3F21AABF63003ED529 /* ProjectsListViewController.h */,
+				FA52FD4021AABF63003ED529 /* ProjectsListViewController.m */,
+			);
+			path = ProjectsList;
+			sourceTree = "<group>";
+		};
+		FA52FD4221AABF7B003ED529 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA52FD4521AAE3EA003ED529 /* ProjectsList */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA52FD4521AAE3EA003ED529 /* ProjectsList */ = {
+			isa = PBXGroup;
+			children = (
+				FA52FD5821AAF4D7003ED529 /* ProjectsListCell.h */,
+				FA52FD5921AAF4D7003ED529 /* ProjectsListCell.m */,
+				FA52FD5721AAF4D7003ED529 /* ProjectsListCell.xib */,
+			);
+			path = ProjectsList;
+			sourceTree = "<group>";
+		};
 		FA8725DF21A5B3F50077A20D /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +217,7 @@
 				FA8725E321A5B7350077A20D /* UtilsMacros.h */,
 				FA8725E421A5B7990077A20D /* APIStringMacros.h */,
 				FA8725EA21A5BD6A0077A20D /* PodsLibsMacros.h */,
+				FA52FD4421AAE3AC003ED529 /* BaseMacros.h */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -262,7 +301,8 @@
 			files = (
 				FA2B304321A43B5D008942A3 /* LaunchScreen.storyboard in Resources */,
 				FA2B304021A43B5D008942A3 /* Assets.xcassets in Resources */,
-				FA2B303E21A43B5D008942A3 /* Main.storyboard in Resources */,
+				FA52FD5121AAE674003ED529 /* Main.storyboard in Resources */,
+				FA52FD5A21AAF4D7003ED529 /* ProjectsListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,9 +353,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA8725EE21A5CA150077A20D /* LoginTextField.m in Sources */,
+				FA52FD5B21AAF4D7003ED529 /* ProjectsListCell.m in Sources */,
 				FA2B303B21A43B5D008942A3 /* ViewController.m in Sources */,
 				FA8725E921A5B9550077A20D /* BaseViewController.m in Sources */,
 				FA2B304621A43B5D008942A3 /* main.m in Sources */,
+				FA52FD4121AABF64003ED529 /* ProjectsListViewController.m in Sources */,
 				FA2B303821A43B5D008942A3 /* AppDelegate.m in Sources */,
 				FA2B306221A43B74008942A3 /* BaseNavigationVController.m in Sources */,
 				FA2B306321A43B74008942A3 /* LoginViewController.m in Sources */,

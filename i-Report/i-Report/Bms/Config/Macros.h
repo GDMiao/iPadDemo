@@ -14,4 +14,5 @@
 #import "DimensMacros.h"
 #import "PathMacros.h"
 #import "PodsLibsMacros.h"
+#import "BaseMacros.h"
 #endif /* Macros_h */

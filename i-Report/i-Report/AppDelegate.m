@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "LoginViewController.h"
 #import "BaseNavigationVController.h"
+#import "ProjectsListViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -18,7 +19,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     LoginViewController *loginVc = [LoginViewController new];
-    BaseNavigationVController *baseNav = [[BaseNavigationVController alloc] initWithRootViewController:loginVc];
+    ProjectsListViewController *projectsListVc = [ProjectsListViewController new];
+    BaseNavigationVController *baseNav = [[BaseNavigationVController alloc] initWithRootViewController:projectsListVc];
     self.window.rootViewController = baseNav;
     [self.window makeKeyAndVisible];
     return YES;
